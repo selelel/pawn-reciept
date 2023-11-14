@@ -26,14 +26,13 @@ function Hero() {
               onChange={cont?.onchangeHandler}
               className="border-2 rounded indent-3 border-white bg-transparent h-10 outline-none w-full"
               type="text"
+              placeholder="Input your chess.com username here"
             />
-            {/*Make a reuasble input components*/}
           </form>
         </div>
-        <div className="text-white">
-          <div className="justify-end flex">
-            <Reciept />
-          </div>
+
+        <div className="justify-end flex scale-[.8]">
+          <Reciept />
         </div>
       </div>
     </>
