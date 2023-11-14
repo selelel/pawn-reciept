@@ -29,12 +29,10 @@ function Reciept() {
   }, [cont?.onsubmitHandler]);
 
   const keys = ratings && Object.keys(ratings);
-  console.log(keys);
   const ratingDetail =
     ratings &&
     Object.values(ratings).map((el, i) => {
       const items = keys[i].replace("chess_", "").toUpperCase();
-      console.log(el);
       return i >= 5 ? null : (
         <tr key={i}>
           <td className="text-center">{i + 1}</td>
@@ -49,7 +47,7 @@ function Reciept() {
   const date = new Date();
 
   return (
-    <div className="bg-reciept text-black/60 overflow-hidden p-8 font-reciept min-w-[25.5rem]">
+    <div className="bg-reciept mx-auto text-black/60 overflow-hidden p-8 font-reciept min-w-[25.5rem] max-w-[25.6rem]">
       <div className="min-w-fit mx-auto w-fit my-5">
         <h1 className="font-extrabold text-5xl text-black/50">Pawn Peek</h1>
         <p className="text-xs w-fit mx-auto -mt-2 tracking-[.3rem]">

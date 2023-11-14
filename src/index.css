@@ -13,4 +13,5 @@
 
 body {
   font-family: "Libre Barcode 39";
+  @apply bg-black_ h-screen font-mont;
 }
