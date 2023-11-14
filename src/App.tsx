@@ -1,7 +1,11 @@
-import React from "react";
+import Hero from "./pages/HeroPage";
 
 function App() {
-  return <div className="font-semibold"></div>;
+  return (
+    <div className="bg-black_ h-screen font-mont p-10">
+      <Hero />
+    </div>
+  );
 }
 
 export default App;

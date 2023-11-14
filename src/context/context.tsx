@@ -7,7 +7,18 @@ import React, {
 } from "react";
 import { Fetch, FetchDetail } from "../context/fetching_data";
 
-const FetchedData = createContext<unknown>(undefined);
+type Outputprops = {
+  data?: string | null;
+  data_rate?: string | null;
+  onchangeHandler?: (e: any) => void;
+  onsubmitHandler?: (e: any) => void;
+  setData?: React.Dispatch<React.SetStateAction<null>>;
+  setData_rate?: React.Dispatch<React.SetStateAction<null>>;
+  setName?: React.Dispatch<React.SetStateAction<string>>;
+  insertName?: string;
+};
+
+const FetchedData = createContext<Outputprops | null>(null);
 
 type params = {
   children: ReactNode;
@@ -16,12 +27,13 @@ type params = {
 function Context({ children }: params) {
   const [data, setData] = useState(null);
   const [data_rate, setData_rate] = useState(null);
-  const [insertName, setName] = useState("");
+  const [insertName, setName] = useState("selelei");
+  let value = "";
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await Fetch(insertName);
+        const response = await Fetch(insertName.toLowerCase());
         setData(response);
       } catch (error) {
         console.error("Error fetching data:", error);
@@ -30,7 +42,7 @@ function Context({ children }: params) {
 
     const fetchDetail_ratings = async () => {
       try {
-        const response = await FetchDetail(insertName);
+        const response = await FetchDetail(insertName.toLowerCase());
         setData_rate(response);
       } catch (error) {
         console.error("Error fetching data:", error);
@@ -42,13 +54,14 @@ function Context({ children }: params) {
   }, [insertName]);
 
   const onchangeHandler = (e: any) => {
-    setName(e.target.value);
+    value = e.target.value;
   };
 
   const onsubmitHandler = (e: any) => {
     e.preventDefault();
-    setName(insertName);
+    setName(value);
   };
+
   return (
     <FetchedData.Provider
       value={{
@@ -56,9 +69,8 @@ function Context({ children }: params) {
         data_rate,
         onchangeHandler,
         onsubmitHandler,
-        setData,
-        setData_rate,
         setName,
+        insertName,
       }}
     >
       {children}
@@ -71,13 +83,3 @@ const context = () => {
 };
 export { Context, context };
 export default FetchedData;
-
-// type output = {
-//   data?: string;
-//   data_rate?: string;
-//   onchangeHandler?: (e: any) => void;
-//   onsubmitHandler?: (e: any) => void;
-//   setData?: React.Dispatch<React.SetStateAction<null>>;
-//   setData_rate?: React.Dispatch<React.SetStateAction<null>>;
-//   setName?: React.Dispatch<React.SetStateAction<string>>;
-// };
