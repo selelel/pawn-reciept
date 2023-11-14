@@ -7,7 +7,7 @@ function Hero() {
 
   return (
     <>
-      <div className="flex items-center h-full gap-10 justify-center">
+      <div className="flex-rows md:flex items-center h-full gap-10 justify-center">
         <div className="text-white min-w-fit">
           <h1 className="font-extrabold text-7xl ">
             Pawn<span className="text-green_ "> Peek</span>
@@ -30,7 +30,7 @@ function Hero() {
             {/*Make a reuasble input components*/}
           </form>
         </div>
-        <div className="text-white overflow-hidden">
+        <div className="text-white">
           <div className="justify-end flex">
             <Reciept />
           </div>

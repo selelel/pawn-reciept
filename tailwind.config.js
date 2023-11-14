@@ -10,6 +10,8 @@ module.exports = {
       fontFamily: {
         roboto: ["Roboto", "sans-serif"],
         mont: ["Montserrat", "sans-serif"],
+        reciept: ["Courier Prime", "monospace"],
+        barcode: ["Libre Barcode 39", "cursive"],
       },
       backgroundImage: {
         reciept:
