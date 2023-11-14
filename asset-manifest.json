@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/pawn-peek/static/css/main.9256e2c0.css",
+    "main.js": "/pawn-peek/static/js/main.d3b8c558.js",
+    "static/js/787.9caebbad.chunk.js": "/pawn-peek/static/js/787.9caebbad.chunk.js",
+    "static/media/chess.png": "/pawn-peek/static/media/chess.2f5b4c886fccd1779c52.png",
+    "index.html": "/pawn-peek/index.html",
+    "main.9256e2c0.css.map": "/pawn-peek/static/css/main.9256e2c0.css.map",
+    "main.d3b8c558.js.map": "/pawn-peek/static/js/main.d3b8c558.js.map",
+    "787.9caebbad.chunk.js.map": "/pawn-peek/static/js/787.9caebbad.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9256e2c0.css",
+    "static/js/main.d3b8c558.js"
+  ]
+}
