@@ -1,44 +1,63 @@
-import React from "react";
+import React, { useContext, useRef } from "react";
+import { saveAs } from "file-saver";
 import { context } from "../context/context";
 import Reciept from "./Reciept";
+import { toPng } from "html-to-image";
 
 function Hero() {
   const cont = context();
+  const receiptRef = useRef(null);
+
+  const handleDownload = async () => {
+    try {
+      if (receiptRef.current) {
+        const dataUrl = await toPng(receiptRef.current); // Use the imported function
+        saveAs(dataUrl, `${cont?.insertName}.png`);
+      }
+    } catch (error) {
+      console.error("Error converting to image:", error);
+    }
+  };
 
   return (
-    <>
-      <div className="flex-rows md:flex items-center h-full justify-center min-w-max mt-[10rem]">
-        <div className="text-white min-w-max">
-          <h1 className="font-extrabold text-5xl md:text-7xl w-fit mx-auto">
-            Pawn<span className="text-green_ "> Peek</span>
-          </h1>
-          <p className="text-lg w-fit mx-auto tracking-[.3rem] font-roboto">
-            statistics
-          </p>
-          <h1 className="w-fit mx-auto text-sm mt-4">
-            🔽 Generate your Chess receipt 🔽
-          </h1>
-          <form
-            onSubmit={cont?.onsubmitHandler}
-            className="justify-center w-1/2 mx-auto m-1"
-          >
-            <input
-              onChange={cont?.onchangeHandler}
-              className="border-2 flex justify-center rounded indent-3 border-white bg-transparent h-10 outline-none w-full"
-              type="text"
-              placeholder="chess.com username "
-            />
-          </form>
+    <div className="grid md:grid-cols-2 items-center min-w-fit  mx-auto p-1 mt-16 md:-mt-10 ">
+      {/* Left side */}
+      <div className="text-white mx-auto">
+        <h1 className="font-extrabold text-5xl md:text-6xl w-fit mx-auto min-w-max">
+          Pawn<span className="text-green_ "> Reciept</span>
+        </h1>
+        <p className="text-lg w-fit mx-auto tracking-[.3rem] font-roboto">
+          statistics
+        </p>
+        <h1 className="w-fit mx-auto text-sm mt-3">
+          🔽 Generate your Chess Reciept 🔽
+        </h1>
+        <form
+          onSubmit={cont?.onsubmitHandler}
+          className="justify-center mx-auto mt-3"
+        >
+          <input
+            onChange={cont?.onchangeHandler}
+            className="border-2 flex justify-center rounded indent-2 border-white bg-transparent md:h-10 outline-none w-full custom-placeholder  hover:scale-[1.02] duration-300 ease-out"
+            type="text"
+            placeholder="Input your chess.com username here"
+          />
+        </form>
+      </div>
+
+      <div className="flex flex-col items-center justify-center -mt-14 md:mt-1 scale-[.7] md:scale-[.75]">
+        <div ref={receiptRef}>
+          <Reciept />
         </div>
 
-        <div className="justify-center flex flex-col scale-[.79] md:scale-[.705]">
-          <Reciept />
-          <button className="mt-1 bg-green_ w-fit mx-auto p-1 text-white rounded active:scale-95">
-            Download
-          </button>
-        </div>
+        <button
+          onClick={handleDownload}
+          className="mt-1 bg-green_ w-fit mx-auto p-1 text-white rounded active:scale-95"
+        >
+          Get your Reciept
+        </button>
       </div>
-    </>
+    </div>
   );
 }
 

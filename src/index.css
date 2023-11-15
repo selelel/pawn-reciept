@@ -12,6 +12,9 @@
 }
 
 body {
-  font-family: "Libre Barcode 39";
-  @apply bg-black_ h-screen font-mont;
+  @apply bg-black_ font-mont;
+}
+
+.custom-placeholder::placeholder {
+  @apply text-white/50 font-semibold text-xs;
 }

@@ -14,8 +14,7 @@ module.exports = {
         barcode: ["Libre Barcode 39", "cursive"],
       },
       backgroundImage: {
-        reciept:
-          "url('https://img.freepik.com/free-photo/view-white-crumpled-paper_1194-7544.jpg?w=740&t=st=1699946435~exp=1699947035~hmac=bdb20a1cc6bd2ee0ed6b8c672a06ab2958cef5aca7542c5d3dfd160d405b48ab')",
+        reciept: "url('./context/img/reciept-bg.jpg')",
       },
       screens: {
         md: "874px",
