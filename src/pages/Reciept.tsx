@@ -50,10 +50,8 @@ function Reciept() {
   return (
     <>
       <div className="bg-reciept mx-auto text-black/80 overflow-hidden p-8 font-reciept min-w-[25.5rem] max-w-[25.6rem]">
-        <div className="min-w-fit mx-auto w-fit mt-2">
-          <h1 className="font-extrabold text-4xl text-black/60">
-            Pawn Reciept
-          </h1>
+        <div className="min-w-fit mx-auto w-fit mt-2 text-black/70">
+          <h1 className="font-extrabold text-3xl ">Pawn Reciept</h1>
           <p className="text-xs w-fit mx-auto -mt-2 tracking-[.3rem]">
             statistics
           </p>
@@ -100,13 +98,15 @@ function Reciept() {
           </div>
 
           <div className="mt-5 flex flex-col justify-center">
-            <p className="w-fit mx-auto text-lg">THANK YOU FOR VISITING!</p>
+            <p className="w-fit mx-auto text-[1.120]">
+              THANK YOU FOR VISITING!
+            </p>
             {/* <img
               className="h-10 w-full overflow-hidden mix-blend-multiply -mt-1"
               src={sel}
               alt="sel"
             /> */}
-            <div className="mx-auto">
+            <div className="mx-auto overflow-hidden">
               <div className=" mix-blend-multiply opacity-70">
                 <Barcode
                   value="selelel"
@@ -121,7 +121,7 @@ function Reciept() {
               </div>
             </div>
 
-            <p className="w-fit mx-auto text-xs">selelel.github/pawn-reciept</p>
+            <p className="w-fit mx-auto text-xs">selelel.github/pawn-peek</p>
             <img className="w-8 mt-10 mx-auto" src={chess} alt="pawn" />
           </div>
         </div>

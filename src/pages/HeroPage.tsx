@@ -20,7 +20,7 @@ function Hero() {
   };
 
   return (
-    <div className="grid md:grid-cols-2 items-center min-w-fit  mx-auto p-1 mt-16 md:-mt-10 ">
+    <div className="grid md:grid-cols-2 items-center min-w-fit  mx-auto p-1 mt-16 md:-mt-12  ">
       {/* Left side */}
       <div className="text-white mx-auto">
         <h1 className="font-extrabold text-5xl md:text-6xl w-fit mx-auto min-w-max">
@@ -34,7 +34,7 @@ function Hero() {
         </h1>
         <form
           onSubmit={cont?.onsubmitHandler}
-          className="justify-center mx-auto mt-3"
+          className="justify-center mx-auto mt-3 flex gap-2"
         >
           <input
             onChange={cont?.onchangeHandler}
@@ -42,11 +42,18 @@ function Hero() {
             type="text"
             placeholder="Input your chess.com username here"
           />
+          <button
+            className=" bg-green_ p-1 rounded"
+            type="submit"
+            onSubmit={cont?.onsubmitHandler}
+          >
+            Search
+          </button>
         </form>
       </div>
 
       <div className="flex flex-col items-center justify-center -mt-14 md:mt-1 scale-[.7] md:scale-[.75]">
-        <div ref={receiptRef}>
+        <div className="w-fit h-fit shadow-xl " ref={receiptRef}>
           <Reciept />
         </div>
 
