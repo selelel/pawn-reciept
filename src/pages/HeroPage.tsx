@@ -11,7 +11,7 @@ function Hero() {
   const handleDownload = async () => {
     try {
       if (receiptRef.current) {
-        const dataUrl = await toPng(receiptRef.current); // Use the imported function
+        const dataUrl = await toPng(receiptRef.current);
         saveAs(dataUrl, `${cont?.insertName}.png`);
       }
     } catch (error) {
@@ -21,7 +21,6 @@ function Hero() {
 
   return (
     <div className="grid md:grid-cols-2 items-center min-w-fit  mx-auto p-1 mt-16 md:-mt-12  ">
-      {/* Left side */}
       <div className="text-white mx-auto">
         <h1 className="font-extrabold text-5xl md:text-6xl w-fit mx-auto min-w-max">
           Pawn<span className="text-green_ "> Reciept</span>

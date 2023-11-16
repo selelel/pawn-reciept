@@ -1,5 +1,3 @@
-import axios from "axios";
-
 const Fetch = async (ign: string) => {
   try {
     const response = await fetch(`https://api.chess.com/pub/player/${ign}`);

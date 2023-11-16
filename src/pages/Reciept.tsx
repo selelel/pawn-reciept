@@ -84,8 +84,10 @@ function Reciept() {
             <tbody>{ratingDetail}</tbody>
           </table>
           <div className="flex justify-between h-4">
-            <p>ITEMS COUNT</p>
-            <p>{ratings && Object.keys(ratings).length - 1}</p>
+            <p className="w-fit min-w-max">ITEMS COUNT</p>
+            <p className="w-fit min-w-max">
+              {ratings && Object.keys(ratings).length - 1}
+            </p>
           </div>
           <div className="flex justify-between border-b border-black">
             <p>PARTISAN</p>
@@ -97,17 +99,12 @@ function Reciept() {
             <p className="h-4">CARDSHOLDER: {data?.username?.toUpperCase()}</p>
           </div>
 
-          <div className="mt-5 flex flex-col justify-center">
-            <p className="w-fit mx-auto text-[1.120]">
+          <div className="mt-5 justify-center">
+            <p className="w-fit min-w-max mx-auto text-[1.120]">
               THANK YOU FOR VISITING!
             </p>
-            {/* <img
-              className="h-10 w-full overflow-hidden mix-blend-multiply -mt-1"
-              src={sel}
-              alt="sel"
-            /> */}
             <div className="mx-auto overflow-hidden">
-              <div className=" mix-blend-multiply opacity-70">
+              <div className=" w-fit mx-auto mix-blend-multiply opacity-70">
                 <Barcode
                   value="selelel"
                   options={{
