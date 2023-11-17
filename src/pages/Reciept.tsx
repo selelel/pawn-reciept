@@ -49,8 +49,8 @@ function Reciept() {
   const date = new Date();
   return (
     <>
-      <div className="bg-reciept mx-auto text-black/80 overflow-hidden p-8 font-reciept min-w-[25.5rem] max-w-[25.6rem]">
-        <div className="min-w-fit mx-auto w-fit mt-2 text-black/70">
+      <div className="bg-reciept mx-auto w-full text-black/80 overflow-hidden p-8 font-reciept">
+        <div className="mx-auto w-fit mt-2 text-black/70 flex flex-col">
           <h1 className="font-extrabold text-3xl ">Pawn Reciept</h1>
           <p className="text-xs w-fit mx-auto -mt-2 tracking-[.3rem]">
             statistics
@@ -84,10 +84,8 @@ function Reciept() {
             <tbody>{ratingDetail}</tbody>
           </table>
           <div className="flex justify-between h-4">
-            <p className="w-fit min-w-max">ITEMS COUNT</p>
-            <p className="w-fit min-w-max">
-              {ratings && Object.keys(ratings).length - 1}
-            </p>
+            <p className="">ITEMS COUNT</p>
+            <p className="">{ratings && Object.keys(ratings).length - 1}</p>
           </div>
           <div className="flex justify-between border-b border-black">
             <p>PARTISAN</p>
@@ -100,7 +98,7 @@ function Reciept() {
           </div>
 
           <div className="mt-5 justify-center">
-            <p className="w-fit min-w-max mx-auto text-[1.120]">
+            <p className="w-fit mx-auto text-[1.120]">
               THANK YOU FOR VISITING!
             </p>
             <div className="mx-auto overflow-hidden">
