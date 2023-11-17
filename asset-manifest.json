@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/pawn-peek/static/css/main.44cf113e.css",
-    "main.js": "/pawn-peek/static/js/main.32ec4f7a.js",
+    "main.css": "/pawn-peek/static/css/main.37c5ef31.css",
+    "main.js": "/pawn-peek/static/js/main.3402c5fc.js",
     "static/js/787.9caebbad.chunk.js": "/pawn-peek/static/js/787.9caebbad.chunk.js",
     "static/media/reciept-bg.jpg": "/pawn-peek/static/media/reciept-bg.df3d1dcead55725797e8.jpg",
     "static/media/chess.png": "/pawn-peek/static/media/chess.2f5b4c886fccd1779c52.png",
     "index.html": "/pawn-peek/index.html",
-    "main.44cf113e.css.map": "/pawn-peek/static/css/main.44cf113e.css.map",
-    "main.32ec4f7a.js.map": "/pawn-peek/static/js/main.32ec4f7a.js.map",
+    "main.37c5ef31.css.map": "/pawn-peek/static/css/main.37c5ef31.css.map",
+    "main.3402c5fc.js.map": "/pawn-peek/static/js/main.3402c5fc.js.map",
     "787.9caebbad.chunk.js.map": "/pawn-peek/static/js/787.9caebbad.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.44cf113e.css",
-    "static/js/main.32ec4f7a.js"
+    "static/css/main.37c5ef31.css",
+    "static/js/main.3402c5fc.js"
   ]
 }
