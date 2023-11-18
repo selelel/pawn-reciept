@@ -5,7 +5,7 @@ import React, {
   ReactNode,
   useContext,
 } from "react";
-import { Fetch, FetchDetail } from "../context/fetching_data";
+import { Fetch, FetchDetail } from "../context/utils/fetching_data";
 
 type Outputprops = {
   data?: string | null;

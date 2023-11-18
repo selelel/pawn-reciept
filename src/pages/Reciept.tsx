@@ -30,26 +30,28 @@ function Reciept() {
   }, [cont?.onsubmitHandler]);
 
   const ratingDetail =
-    ratings && typeof ratings === "object" && !Array.isArray(ratings)
-      ? Object.values(ratings).map((el, i) => {
-          const keys = ratings && Object.keys(ratings);
-          const items = keys[i].replace("chess_", "").toUpperCase();
-          const ratingValue = el.last?.rating || el.highest?.rating || el;
+    ratings &&
+    !Array.isArray(ratings) &&
+    Object.values(ratings).map((el, i) => {
+      const keys = ratings && Object.keys(ratings);
+      const items = keys[i].replace("chess_", "").toUpperCase();
+      const ratingValue = el.last?.rating || el.highest?.rating || el;
 
-          return i >= 5 ? null : (
-            <tr key={i}>
-              <td className="text-center">{i + 1}</td>
-              <td className="indent-5">{items}</td>
-              <td className="text-right">{ratingValue}</td>
-            </tr>
-          );
-        })
-      : null;
+      return i >= 5 ? null : (
+        <tr key={i}>
+          <td className="text-center">{i + 1}</td>
+          <td className="indent-5">{items}</td>
+          <td className="text-right">{ratingValue}</td>
+        </tr>
+      );
+    });
+
+  console.log(ratingDetail);
 
   const date = new Date();
   return (
     <>
-      <div className="bg-reciept mx-auto w-full text-black/80 overflow-hidden p-8 font-reciept">
+      <div className="bg-reciept mx-auto w-full text-black/80 overflow-hidden p-8 font-reciept ">
         <div className="mx-auto w-fit mt-2 text-black/70 flex flex-col">
           <h1 className="font-extrabold text-3xl ">Pawn Reciept</h1>
           <p className="text-xs w-fit mx-auto -mt-2 tracking-[.3rem]">
