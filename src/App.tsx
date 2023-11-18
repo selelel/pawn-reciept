@@ -15,8 +15,10 @@ function App() {
       </div>
       <Routes>
         <Route path="" element={<Hero />}></Route>
-        <Route path="/about" element={<About />}></Route>
-        <Route path="/contact" element={<Contact />}></Route>
+        <Route path="/pawn-peek" element={<Hero />}>
+          <Route path="/pawn-peek/about" element={<About />}></Route>
+          <Route path="/pawn-peek/contact" element={<Contact />}></Route>
+        </Route>
       </Routes>
     </>
   );
