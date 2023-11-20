@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/pawn-peek/static/css/main.251eca8f.css",
-    "main.js": "/pawn-peek/static/js/main.70a5fa01.js",
-    "static/js/787.9caebbad.chunk.js": "/pawn-peek/static/js/787.9caebbad.chunk.js",
-    "static/media/reciept-bg.jpg": "/pawn-peek/static/media/reciept-bg.df3d1dcead55725797e8.jpg",
-    "static/media/chess.png": "/pawn-peek/static/media/chess.2f5b4c886fccd1779c52.png",
-    "index.html": "/pawn-peek/index.html",
-    "main.251eca8f.css.map": "/pawn-peek/static/css/main.251eca8f.css.map",
-    "main.70a5fa01.js.map": "/pawn-peek/static/js/main.70a5fa01.js.map",
-    "787.9caebbad.chunk.js.map": "/pawn-peek/static/js/787.9caebbad.chunk.js.map"
+    "main.css": "/pawn-reciept/static/css/main.cec8c2e6.css",
+    "main.js": "/pawn-reciept/static/js/main.eff71648.js",
+    "static/js/787.9caebbad.chunk.js": "/pawn-reciept/static/js/787.9caebbad.chunk.js",
+    "static/media/reciept-bg.jpg": "/pawn-reciept/static/media/reciept-bg.df3d1dcead55725797e8.jpg",
+    "static/media/chess.png": "/pawn-reciept/static/media/chess.2f5b4c886fccd1779c52.png",
+    "index.html": "/pawn-reciept/index.html",
+    "main.cec8c2e6.css.map": "/pawn-reciept/static/css/main.cec8c2e6.css.map",
+    "main.eff71648.js.map": "/pawn-reciept/static/js/main.eff71648.js.map",
+    "787.9caebbad.chunk.js.map": "/pawn-reciept/static/js/787.9caebbad.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.251eca8f.css",
-    "static/js/main.70a5fa01.js"
+    "static/css/main.cec8c2e6.css",
+    "static/js/main.eff71648.js"
   ]
 }
