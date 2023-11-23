@@ -79,6 +79,7 @@ function Context({ children }: params) {
 }
 
 const context = () => {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   return useContext(FetchedData);
 };
 export { Context, context };

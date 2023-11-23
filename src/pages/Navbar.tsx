@@ -12,17 +12,17 @@ function Nav({ children }: prop) {
       <div className="fixed right-2 top-5">
         <ul className="text-white/70 text-sm font-roboto flex gap-4 p-2">
           <li>
-            <Link to={"/pawn-peek"}>
+            <Link to={"/pawn-reciept"}>
               <Button primary>Home</Button>
             </Link>
           </li>
           <li>
-            <Link to={"/pawn-peek/about"}>
+            <Link to={"/pawn-reciept/about"}>
               <Button primary>About</Button>
             </Link>
           </li>
           <li>
-            <Link to={"/pawn-peek/contact"}>
+            <Link to={"/pawn-reciept/contact"}>
               <Button primary>Contact</Button>
             </Link>
           </li>

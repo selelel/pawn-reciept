@@ -31,7 +31,7 @@ function Hero() {
             statistics
           </p>
           <h1 className="w-fit mx-auto text-sm mt-3">
-            🔽 Generate your Chess Reciept 🔽
+            🔽 Generate your personal reciept 🔽
           </h1>
           <form
             onSubmit={cont?.onsubmitHandler}
