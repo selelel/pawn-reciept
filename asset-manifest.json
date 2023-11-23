@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/pawn-reciept/static/css/main.cec8c2e6.css",
-    "main.js": "/pawn-reciept/static/js/main.276468b2.js",
+    "main.css": "/pawn-reciept/static/css/main.6c3d09c9.css",
+    "main.js": "/pawn-reciept/static/js/main.a39c3f15.js",
     "static/js/787.9caebbad.chunk.js": "/pawn-reciept/static/js/787.9caebbad.chunk.js",
     "static/media/reciept-bg.jpg": "/pawn-reciept/static/media/reciept-bg.df3d1dcead55725797e8.jpg",
     "static/media/chess.png": "/pawn-reciept/static/media/chess.2f5b4c886fccd1779c52.png",
     "index.html": "/pawn-reciept/index.html",
-    "main.cec8c2e6.css.map": "/pawn-reciept/static/css/main.cec8c2e6.css.map",
-    "main.276468b2.js.map": "/pawn-reciept/static/js/main.276468b2.js.map",
+    "main.6c3d09c9.css.map": "/pawn-reciept/static/css/main.6c3d09c9.css.map",
+    "main.a39c3f15.js.map": "/pawn-reciept/static/js/main.a39c3f15.js.map",
     "787.9caebbad.chunk.js.map": "/pawn-reciept/static/js/787.9caebbad.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cec8c2e6.css",
-    "static/js/main.276468b2.js"
+    "static/css/main.6c3d09c9.css",
+    "static/js/main.a39c3f15.js"
   ]
 }
