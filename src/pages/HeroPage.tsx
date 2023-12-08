@@ -53,7 +53,7 @@ function Hero() {
           </form>
         </div>
         {/*second */}
-        <div className="flex flex-col items-center -mt-14 md:mt-1 scale-[0.8]">
+        <div className="flex flex-col items-center -mt-14 md:mt-1 scale-[0.8] gap-3">
           <div
             className=" min-w-[25rem] min-h-[29rem] shadow-xl"
             ref={receiptRef}
