@@ -1,6 +1,5 @@
-import React, { useEffect, useState, useRef } from "react";
+import { useEffect, useState } from "react";
 import { context } from "../context/context";
-import sel from "../context/img/sel.png";
 import chess from "../context/img/chess.png";
 import Barcode from "react-jsbarcode";
 
@@ -27,7 +26,7 @@ function Reciept() {
     };
 
     fetchData();
-  }, [cont?.onsubmitHandler]);
+  });
 
   const ratingDetail =
     ratings &&
@@ -128,6 +127,3 @@ function Reciept() {
 }
 
 export default Reciept;
-function saveAs(dataUrl: string, arg1: string) {
-  throw new Error("Function not implemented.");
-}

@@ -5,10 +5,6 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { Context } from "./context/context";
 import { BrowserRouter } from "react-router-dom";
-import Nav from "./pages/Navbar";
-import Hero from "./pages/HeroPage";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement

@@ -1,4 +1,4 @@
-import React, { useContext, useRef } from "react";
+import { useRef } from "react";
 import { saveAs } from "file-saver";
 import { context } from "../context/context";
 import Reciept from "./Reciept";
